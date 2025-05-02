@@ -21,3 +21,10 @@ print(df_lido)
 
 # Salvar novamente com a nova coluna
 df_lido.to_csv("dados/produtos_atualizados.csv", index=False)
+# Filtrar produtos com preço maior que 15
+filtrados = df_lido[df_lido["Preço"] > 15]
+print("\nProdutos com preço > 15:")
+print(filtrados)
+
+# Agrupar por categoria (exemplo simples)
+# (Você pode expandir isso depois!)
