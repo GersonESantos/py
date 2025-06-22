@@ -11,5 +11,5 @@ for model in genai.list_models():
 
 modelo = 'models/gemini-2.0-flash'
 model = genai.GenerativeModel(modelo)
-resposta = model.generate_content('quem é a empresa por trás dos modelos gemini')
+resposta = model.generate_content('quem e a empresa por trás dos modelos gemini')
 print(resposta.text)
