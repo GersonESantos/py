@@ -1,12 +1,10 @@
 import os
 import google.generativeai as genai
+from dotenv import load_dotenv
 
-# Defina sua chave de API aqui
-os.environ['GOOGLE_API_KEY'] = "AIzaSyCAZLF4rPGCJpFzN03BfyCasXJWoiKtgbk"
-
+load_dotenv()
 
 genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
 
 for model in genai.list_models():
     print(model.name)
-
