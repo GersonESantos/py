@@ -9,4 +9,5 @@ print(df.describe())
 linhas, colunas = df.shape
 print(f"Linhas: {linhas} | Colunas: {colunas}")
 print(df.isnull().sum())
+print(df.columns)
 df.dropna(inplace=True)
